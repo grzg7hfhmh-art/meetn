@@ -1,0 +1,168 @@
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  animation-name: modal-fade-in;
+  animation-duration: 0.5s;
+  opacity: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > .modal {
+    background-color: var(--light-color);
+    animation-name: modal-fade-in;
+    animation-duration: 0.5s;
+    opacity: 1;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 30rem;
+    width: 90vw;
+    overflow: hidden;
+
+    @media (max-width: 500px) {
+      width: 90vw;
+      max-width: none;
+    }
+
+    .header {
+      padding: 0.7rem 0.9rem 0.3rem 0.9rem;
+      background-color: var(--light-color);
+      z-index: 7;
+      border-bottom: 1px solid var(--light-grey-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .close-button-wrapper {
+        display: flex;
+        justify-content: flex-end;
+
+        .close-button {
+          position: relative;
+          z-index: 3;
+          width: 1rem;
+          height: 1rem;
+
+          &::before,
+          &::after {
+            content: "";
+            width: 0.1rem;
+            height: 100%;
+            background-color: var(--dark-grey-color);
+            position: absolute;
+            top: 0;
+            left: 50%;
+          }
+
+          &::before {
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            transform: rotate(135deg);
+          }
+        }
+      }
+    }
+
+    .content {
+      max-height: 80vh;
+      overflow: auto;
+      padding: 0.6rem 0.9rem 0.9rem 0.9rem;
+    }
+
+    .footer {
+      padding: 0 0.9rem 0.9rem 0.9rem;
+      border-top: 1px solid var(--light-grey-color);
+      background-color: var(--light-color);
+    }
+  }
+}
+
+/* 프로필/가족 모달 카드 스타일 보강 */
+.modal.profile-modal,
+.modal.family-profile-modal {
+  .image-wrapper {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .title-group {
+    text-align: center;
+    padding: 0.2rem 0 0.8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      margin-top: 0.4rem;
+      font-size: 1.05rem;
+    }
+
+    .role {
+      margin-left: 0.4rem;
+      font-size: 0.85rem;
+      opacity: 0.75;
+    }
+  }
+
+  .profile-image-large {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+    background-color: var(--light-grey-color);
+    border: 1px solid var(--light-grey-color);
+  }
+
+  .profile-detail,
+  .family-detail {
+    padding-top: 0.2rem;
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 4.2rem 1fr;
+    column-gap: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  dt {
+    opacity: 0.7;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  .memo {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+  }
+}

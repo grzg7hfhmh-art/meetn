@@ -1,29 +1,22 @@
-const getImageUrl = (path: string) => new URL(path, import.meta.url).href
+import coverImage from "./cover.png"
+import groomProfile from "./groom_profile.png"
+import brideProfile from "./bride_profile.png"
+import groomMotherProfile from "./groom_mother_profile.png"
+import groomFatherProfile from "./groom_father_profile.png"
+import groomSisterProfile from "./groom_sister_profile.png"
+import brideSisterProfile from "./bride_sister_profile.png"
+import brideMotherProfile from "./bride_mother_profile.png"
+import brideFatherProfile from "./bride_father_profile.png"
 
-export const COVER_IMAGE = getImageUrl("./cover.png")
-
-export const GALLERY_IMAGES = [
-  getImageUrl("./image1.png"),
-  getImageUrl("./image2.png"),
-  getImageUrl("./image3.png"),
-  getImageUrl("./image4.png"),
-  getImageUrl("./image5.png"),
-  getImageUrl("./image6.png"),
-  getImageUrl("./image7.png"),
-  getImageUrl("./image8.png"),
-  getImageUrl("./image9.png"),
-  getImageUrl("./image10.png"),
-  getImageUrl("./image11.png"),
-  getImageUrl("./image12.png"),
-]
+export const COVER_IMAGE = coverImage
 
 export const PROFILE_IMAGES = {
-  groom: getImageUrl("./groom_profile.png"),
-  bride: getImageUrl("./bride_profile.png"),
-  groomMother: getImageUrl("./groom_mother_profile.png"),
-  groomFather: getImageUrl("./groom_father_profile.png"),
-  groomSister: getImageUrl("./groom_sister_profile.png"),
-  brideSister: getImageUrl("./bride_sister_profile.png"),
-  brideMother: getImageUrl("./bride_mother_profile.png"),
-  brideFather: getImageUrl("./bride_father_profile.png"),
+  groom: groomProfile,
+  bride: brideProfile,
+  groomMother: groomMotherProfile,
+  groomFather: groomFatherProfile,
+  groomSister: groomSisterProfile,
+  brideSister: brideSisterProfile,
+  brideMother: brideMotherProfile,
+  brideFather: brideFatherProfile,
 }

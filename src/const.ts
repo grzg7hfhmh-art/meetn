@@ -201,7 +201,7 @@ const MEETING_FAMILY = {
     groomSide: [
       {
         relation: "新郎の父",
-        name: NAMES.ja.groom.father,
+        name: NAMES.ja.groom.father + "（ヤン グァンソク）",
         age: 60,
         job: "公務員",
         bloodType: "O型",
@@ -211,7 +211,7 @@ const MEETING_FAMILY = {
       },
       {
         relation: "新郎の母",
-        name: NAMES.ja.groom.mother,
+        name: NAMES.ja.groom.mother+ "（チョ　ジョンヒ）",
         age: 58,
         job: "職業サンプル（新郎の母）",
         bloodType: "A型",
@@ -221,7 +221,7 @@ const MEETING_FAMILY = {
       },
       {
         relation: "新郎の姉",
-        name: "梁 秀輝",
+        name: "梁 秀輝（ヤン スフィ）",
         age: 30,
         job: "理学療法士",
         bloodType: "A型",

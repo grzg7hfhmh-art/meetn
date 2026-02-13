@@ -5,14 +5,11 @@ import fs from "fs"
 
 import pkg from "./package.json"
 import { createHtmlPlugin } from "vite-plugin-html"
-import {
-  OG_GROOM_FULLNAME,
-  OG_BRIDE_FULLNAME,
-  MEETING_DATE,
-  LOCATION,
-} from "./src/const"
 
 const distFolder = "build"
+const OG_GROOM_FULLNAME = "양성준"
+const OG_BRIDE_FULLNAME = "카바야마 사리"
+const META_DESCRIPTION = "2026년 3월 9일 월요일 오후 12시 0분 Higashiyama Shinjuku Main Store"
 
 let base = "/"
 
@@ -33,7 +30,7 @@ export default defineConfig({
         data: {
           GROOM_FULLNAME: OG_GROOM_FULLNAME,
           BRIDE_FULLNAME: OG_BRIDE_FULLNAME,
-          DESCRIPTION: `${MEETING_DATE.format("YYYY년 MMMM D일 dddd A h시 m분")} ${LOCATION}`,
+          DESCRIPTION: META_DESCRIPTION,
         },
       },
     }),

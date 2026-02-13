@@ -2,10 +2,10 @@
   "name": "wedding-invitation",
   "version": "0.1.0",
   "description": "A wedding invitation web page template",
-  "author": "Ju Ho Nam <jhnamnam@gmail.com> (https://juhonamnam.github.io/)",
+  "author": "Yang (https://github.com/grzg7hfhmh-art)",
   "license": "MIT",
   "private": true,
-  "homepage": "https://grzg7hfhmh-art.github.io/tweb",
+  "homepage": "https://grzg7hfhmh-art.github.io/meetn",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

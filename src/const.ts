@@ -182,7 +182,7 @@ const MEETING_FAMILY = {
         job: "회시원",
         bloodType: "AB형",
         hobbies: ["넷플릭스감상", "언어공부"],
-        keyword: "#철저함 #계획적 #한국드라마",
+        keyword: "#똑부러짐 #계획적 #한국드라마",
         profileImageUrl: PROFILE_IMAGES.brideMother,
       },
       {
@@ -238,7 +238,7 @@ const MEETING_FAMILY = {
         job: "舞台監督",
         bloodType: "O型",
         hobbies: ["ゲーム", "野球観戦"],
-        keyword: "#酒好き #甘党 #頑固 #おちゃめ",
+        keyword: "#お酒好き #甘党 #頑固 #おちゃめ",
         profileImageUrl: PROFILE_IMAGES.brideFather,
       },
       {

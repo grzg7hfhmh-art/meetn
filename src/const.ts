@@ -188,7 +188,7 @@ const MEETING_FAMILY = {
       {
         relation: "신부 언니",
         name: "카바야마 칸나",
-        age: 30,
+        age: 29,
         job: "공무원",
         bloodType: "B형",
         hobbies: ["술만들기", "베이킹"],
@@ -254,7 +254,7 @@ const MEETING_FAMILY = {
       {
         relation: "新婦の姉",
         name: "樺山 栞菜",
-        age: 30,
+        age: 29,
         job: "公務員",
         bloodType: "B型",
         hobbies: ["お酒作り", "ベーキング"],

@@ -14,7 +14,7 @@ dayjs.locale("ko")
  * 상견례 일정 (일본 개최 가정)
  * - 실제 일정/도시는 여기만 수정하면 됩니다.
  */
-export const MEETING_DATE = dayjs.tz("2026-03-07 12:00", "Asia/Tokyo")
+export const MEETING_DATE = dayjs.tz("2026-03-08 12:00", "Asia/Tokyo")
 
 /**
  * 상견례 장소
